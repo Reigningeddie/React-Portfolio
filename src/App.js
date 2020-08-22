@@ -5,7 +5,8 @@ import Nav from "./components/nav bar/nav";
 import Home from "./components/home/home";
 import AboutMe from "./components/about me/aboutMe";
 
-function App() {
+class App extends React.Component {
+  render() {
   return (
     <Router>
       <div>
@@ -17,6 +18,7 @@ function App() {
       </div>
     </Router>
   );
+  }
 }
 
 export default App;

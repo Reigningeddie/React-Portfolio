@@ -10,7 +10,7 @@ function AboutMe () {
             </div>
             <div class="row">
               <div class="col-md-3">
-                <img src="200x200.jpg" alt="pic from cabo" class="img-thumbnail">
+                <img src="200x200.jpg" alt="pic from cabo" class="img-thumbnail" ></img>
               </div>
               <div class="col-md-9">
                 <p>
@@ -22,7 +22,7 @@ function AboutMe () {
               </div>
             </div>
           </div>
-          <!--Create Card taking up 4 Columns-->
+          {/* <!--Create Card taking up 4 Columns--> */}
           <div class="col-md-4">
             <div class="card mt-2">
               <div class="card-body">
@@ -36,7 +36,6 @@ function AboutMe () {
             </div>
           </div>
         </div>
-      </div>
       </div>
     );
 };
