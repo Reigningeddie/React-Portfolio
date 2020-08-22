@@ -6,6 +6,29 @@ import Home from "./components/home/home";
 import AboutMe from "./components/about me/aboutMe";
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: 'Eduardo Aguilar',
+      headerLinks: [
+        { title: 'Home', path: '/' },
+        { title: 'About Me', path: '/AboutMe' },
+        { title: 'Contact', path: '/contactMe' }
+      ],
+      home: {
+        title: 'Portfolio',
+        text: 'Checkout projects below'
+      },
+      about: {
+        title: 'About Me'
+      },
+      contact: {
+        title: 'Contact Me',
+      }
+      
+    }
+  }
   render() {
   return (
     <Router>
