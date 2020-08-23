@@ -5,6 +5,7 @@ import Home from "./components/home/home";
 import AboutMe from "./components/about me/aboutMe";
 import Projects from "./components/portfolio/portfolio"
 import ContactMe from "./components/contact me/contactMe";
+import Footer from './components/Footer'
 import { Navbar, Nav } from 'react-bootstrap';
 
 
@@ -57,6 +58,7 @@ class App extends React.Component {
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/contactme" component={ContactMe} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
