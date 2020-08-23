@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { Navbar, Nav } from 'react-bootstrap';
+
 import Home from "./components/home/home";
 import AboutMe from "./components/about me/aboutMe";
 import Projects from "./components/portfolio/portfolio"
 import ContactMe from "./components/contact me/contactMe";
 import Footer from './components/Footer'
-import { Navbar, Nav } from 'react-bootstrap';
+
+
 
 
 
@@ -53,10 +56,11 @@ class App extends React.Component {
         </Navbar>
 
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/aboutme" component={AboutMe} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/contactme" component={ContactMe} />
+          <Route exact path="/" render={() => <Home title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route exact path="/aboutme" render={() => <AboutMe title={this.state.about.title} />} />
+          <Route exact path="/projects" render={() => <Projects title={this.state.home.title} />} />
+          <Route exact path="/contactme" render={() => <ContactMe title={this.state.contact.title} />} />
+          <Route path="*" />
         </Switch>
         <Footer />
       </div>

@@ -17,7 +17,7 @@ function AboutMe () {
                   My name is Eduardo, everyone calls me Eddie. I enjoy to golf and paint on my freetime.
                   I have worked at In N Out burger for 7 years, which the company has treated me very well
                   the time I have been with them. I hope to learn some valuable skills in this bootcamp to 
-                  jumpstart a new  career.
+                  jumpstart a new career.
                 </p>
               </div>
             </div>
