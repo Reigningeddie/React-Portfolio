@@ -3,8 +3,10 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Home from "./components/home/home";
 import AboutMe from "./components/about me/aboutMe";
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import Projects from "./components/portfolio/portfolio"
+import ContactMe from "./components/contact me/contactMe";
+import { Navbar, Nav } from 'react-bootstrap';
+
 
 
 class App extends React.Component {
@@ -35,12 +37,13 @@ class App extends React.Component {
   return (
     <Router>
       <div>
+
         <Navbar className="border-bottom" expand="lg" fluid={true}>
           <Navbar.Brand>Eduardo Aguilar</Navbar.Brand>
           <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
           <Navbar.Collapse id="navbar-toggle">
             <Nav className="ml-auto">
-              <Link className="nav-link" to="/Home">Home</Link>
+              <Link className="nav-link" to="/">Home</Link>
               <Link className="nav-link" to="/AboutMe">About</Link>
               <Link className="nav-link" to="/Projects">Projects</Link>
               <Link className="nav-link" to="/ContactMe">Contact</Link>
@@ -51,6 +54,8 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/aboutme" component={AboutMe} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/contactme" component={ContactMe} />
         </Switch>
       </div>
     </Router>
